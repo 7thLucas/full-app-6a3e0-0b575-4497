@@ -64,67 +64,90 @@ export type TDefaultConfigurableData = {
   logoUrl: string;
   brandColor: TBrandColor;
   font: TFont;
-  // Mirror new schema fields here. Example:
-  //   maxItemsPerPage?: number;
-  //   enableNotifications?: boolean;
-  //   featuredCategories?: string[];
+  tagline?: string;
+  aboutText?: string;
+  heroHeading?: string;
+  heroCta?: string;
+  maxEmailsPerDay?: number;
+  enableResumeReminders?: boolean;
+  enableSkillSuggestions?: boolean;
+  enableCertRecommendations?: boolean;
+  enableInterviewPrep?: boolean;
+  enableMockInterviews?: boolean;
+  enableProgressSummaries?: boolean;
+  enableJobNudges?: boolean;
+  enableAtsTips?: boolean;
+  enableMilestones?: boolean;
+  defaultFrequency?: string;
 };
 
 export const defaultConfigurablesData: TDefaultConfigurableData = {
-  appName: "My App",
+  appName: "Pathly",
   logoUrl: "",
+  tagline: "Your always-on career mentor",
+  aboutText: "Pathly monitors your career profile, activity, and progress to send personalized email coaching — proactively, without you having to ask.",
+  heroHeading: "Land your next role with AI-powered career coaching",
+  heroCta: "Get Started Free",
+  maxEmailsPerDay: 5,
+  enableResumeReminders: true,
+  enableSkillSuggestions: true,
+  enableCertRecommendations: true,
+  enableInterviewPrep: true,
+  enableMockInterviews: true,
+  enableProgressSummaries: true,
+  enableJobNudges: true,
+  enableAtsTips: true,
+  enableMilestones: true,
+  defaultFrequency: "Weekly",
   brandColor: {
     // Base
-    background:        "#ffffff",
-    foreground:        "#09090b",
+    background:        "#F8FAFC",
+    foreground:        "#0F172A",
     // Card
     card:              "#ffffff",
-    cardForeground:    "#09090b",
+    cardForeground:    "#0F172A",
     // Popover
     popover:           "#ffffff",
-    popoverForeground: "#09090b",
+    popoverForeground: "#0F172A",
     // Primary
-    primary:           "#2563eb",
+    primary:           "#1D4ED8",
     primaryForeground: "#ffffff",
     // Secondary
-    secondary:           "#f4f4f5",
-    secondaryForeground: "#18181b",
+    secondary:           "#0F766E",
+    secondaryForeground: "#ffffff",
     // Muted
-    muted:           "#f4f4f5",
-    mutedForeground: "#71717a",
+    muted:           "#F1F5F9",
+    mutedForeground: "#64748B",
     // Accent
-    accent:           "#f4f4f5",
-    accentForeground: "#18181b",
+    accent:           "#7C3AED",
+    accentForeground: "#ffffff",
     // Destructive
-    destructive:           "#ef4444",
-    destructiveForeground: "#fafafa",
+    destructive:           "#DC2626",
+    destructiveForeground: "#ffffff",
     // Border / Input / Ring
-    border: "#e4e4e7",
-    input:  "#e4e4e7",
-    ring:   "#2563eb",
+    border: "#E2E8F0",
+    input:  "#E2E8F0",
+    ring:   "#1D4ED8",
     // Charts
-    chart1: "#f97316",
-    chart2: "#0d9488",
-    chart3: "#1e3a5f",
-    chart4: "#d4a017",
-    chart5: "#ea580c",
+    chart1: "#1D4ED8",
+    chart2: "#0F766E",
+    chart3: "#7C3AED",
+    chart4: "#F59E0B",
+    chart5: "#10B981",
     // Navbar
-    navbarBackground: "#ffffff",
+    navbarBackground: "#0F172A",
     // Sidebar
-    sidebarBackground:        "#fafafa",
-    sidebarForeground:        "#3f3f46",
-    sidebarPrimary:           "#2563eb",
+    sidebarBackground:        "#0F172A",
+    sidebarForeground:        "#F8FAFC",
+    sidebarPrimary:           "#1D4ED8",
     sidebarPrimaryForeground: "#ffffff",
-    sidebarAccent:            "#f4f4f5",
-    sidebarAccentForeground:  "#18181b",
-    sidebarBorder:            "#e4e4e7",
-    sidebarRing:              "#2563eb",
+    sidebarAccent:            "#1E293B",
+    sidebarAccentForeground:  "#F8FAFC",
+    sidebarBorder:            "#1E293B",
+    sidebarRing:              "#1D4ED8",
   },
   font: {
     headingFont: "Plus Jakarta Sans",
     textFont: "Inter",
   },
-  // ─────────────────────────────────────────────────────────────────────
-  // Add new field defaults here. See RULES.md §5 for per-type shape.
-  // ─────────────────────────────────────────────────────────────────────
 };
