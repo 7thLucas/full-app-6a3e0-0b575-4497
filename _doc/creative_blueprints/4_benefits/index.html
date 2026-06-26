@@ -1,0 +1,65 @@
+<style>
+  .mode-landscape .sl-metrics { grid-template-columns: repeat(4, 1fr); }
+  .mode-portrait .sl-metrics { grid-template-columns: repeat(2, 1fr); }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full p-12 gap-6">
+
+    <!-- Header -->
+    <div class="flex items-center gap-3">
+      <span class="w-1 h-8 rounded-full" style="background: {{config.brandColor.secondary}};"></span>
+      <h2 class="text-3xl font-bold" style="color: {{config.brandColor.foreground}}; font-family: '{{config.font.headingFont}}', sans-serif;">Value &amp; Benefits</h2>
+    </div>
+
+    <!-- ROI Summary Banner -->
+    <div class="rounded-2xl p-6 flex items-center justify-between" style="background: {{config.brandColor.primary}};">
+      <div>
+        <p class="text-xs font-semibold uppercase tracking-widest mb-1" style="color: rgba(255,255,255,0.7); font-family: '{{config.font.textFont}}', sans-serif;">Core Value Proposition</p>
+        <p class="text-xl font-bold" style="color: #FFFFFF; font-family: '{{config.font.headingFont}}', sans-serif;">The always-on career coach most professionals could never afford in person</p>
+      </div>
+      <div class="text-right pl-8 flex-shrink-0">
+        <p class="text-4xl font-bold" style="color: #FFFFFF; font-family: '{{config.font.headingFont}}', sans-serif;">10×</p>
+        <p class="text-xs" style="color: rgba(255,255,255,0.75); font-family: '{{config.font.textFont}}', sans-serif;">more career touchpoints<br/>vs. annual coaching</p>
+      </div>
+    </div>
+
+    <!-- Metric cards -->
+    <div class="sl-metrics grid gap-4 flex-1">
+
+      <div class="rounded-2xl p-5 flex flex-col gap-2" style="background: {{config.brandColor.card}}; border: 1.5px solid {{config.brandColor.border}};">
+        <p class="text-xs font-semibold uppercase tracking-widest" style="color: {{config.brandColor.primary}}; font-family: '{{config.font.textFont}}', sans-serif;">Personalization</p>
+        <p class="text-3xl font-bold" style="color: {{config.brandColor.foreground}}; font-family: '{{config.font.headingFont}}', sans-serif;">100%</p>
+        <p class="text-xs" style="color: {{config.brandColor.mutedForeground}}; font-family: '{{config.font.textFont}}', sans-serif;">Every email driven by the individual's actual career data — no generic blasts</p>
+      </div>
+
+      <div class="rounded-2xl p-5 flex flex-col gap-2" style="background: {{config.brandColor.card}}; border: 1.5px solid {{config.brandColor.border}};">
+        <p class="text-xs font-semibold uppercase tracking-widest" style="color: {{config.brandColor.secondary}}; font-family: '{{config.font.textFont}}', sans-serif;">Notification Types</p>
+        <p class="text-3xl font-bold" style="color: {{config.brandColor.foreground}}; font-family: '{{config.font.headingFont}}', sans-serif;">10+</p>
+        <p class="text-xs" style="color: {{config.brandColor.mutedForeground}}; font-family: '{{config.font.textFont}}', sans-serif;">Distinct AI-generated coaching categories across the career journey</p>
+      </div>
+
+      <div class="rounded-2xl p-5 flex flex-col gap-2" style="background: {{config.brandColor.card}}; border: 1.5px solid {{config.brandColor.border}};">
+        <p class="text-xs font-semibold uppercase tracking-widest" style="color: {{config.brandColor.accent}}; font-family: '{{config.font.textFont}}', sans-serif;">User Control</p>
+        <p class="text-3xl font-bold" style="color: {{config.brandColor.foreground}}; font-family: '{{config.font.headingFont}}', sans-serif;">Full</p>
+        <p class="text-xs" style="color: {{config.brandColor.mutedForeground}}; font-family: '{{config.font.textFont}}', sans-serif;">Toggle types, set frequency, choose preferred time and days per user preference</p>
+      </div>
+
+      <div class="rounded-2xl p-5 flex flex-col gap-2" style="background: {{config.brandColor.card}}; border: 1.5px solid {{config.brandColor.border}};">
+        <p class="text-xs font-semibold uppercase tracking-widest" style="color: {{config.brandColor.primary}}; font-family: '{{config.font.textFont}}', sans-serif;">Frequency Options</p>
+        <p class="text-3xl font-bold" style="color: {{config.brandColor.foreground}}; font-family: '{{config.font.headingFont}}', sans-serif;">4</p>
+        <p class="text-xs" style="color: {{config.brandColor.mutedForeground}}; font-family: '{{config.font.textFont}}', sans-serif;">Instant, Daily, Weekly, Monthly — users pick exactly how often they hear from their coach</p>
+      </div>
+
+    </div>
+
+    <!-- Strategic pillars -->
+    <div class="flex gap-3">
+      <span class="px-3 py-1.5 rounded-full text-xs font-medium" style="background: {{config.brandColor.muted}}; color: {{config.brandColor.foreground}}; font-family: '{{config.font.textFont}}', sans-serif;">Personalization over volume</span>
+      <span class="px-3 py-1.5 rounded-full text-xs font-medium" style="background: {{config.brandColor.muted}}; color: {{config.brandColor.foreground}}; font-family: '{{config.font.textFont}}', sans-serif;">Action-oriented guidance</span>
+      <span class="px-3 py-1.5 rounded-full text-xs font-medium" style="background: {{config.brandColor.muted}}; color: {{config.brandColor.foreground}}; font-family: '{{config.font.textFont}}', sans-serif;">Milestone momentum</span>
+      <span class="px-3 py-1.5 rounded-full text-xs font-medium" style="background: {{config.brandColor.muted}}; color: {{config.brandColor.foreground}}; font-family: '{{config.font.textFont}}', sans-serif;">User autonomy</span>
+    </div>
+
+  </div>
+</section>
