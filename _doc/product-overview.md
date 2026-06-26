@@ -1,7 +1,7 @@
 # AI Career Coach — Product Overview
 
 ## Product Identity
-- **Name**: AI Career Coach
+- **Name**: Pathly
 - **Tagline**: Your always-on career mentor
 - **Category**: AI-powered career development SaaS platform
 
