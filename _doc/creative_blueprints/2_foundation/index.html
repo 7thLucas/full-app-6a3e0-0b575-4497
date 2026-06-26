@@ -1,0 +1,91 @@
+<style>
+  .mode-landscape .sl-layout { flex-direction: row; gap: 2rem; }
+  .mode-portrait .sl-layout { flex-direction: column; gap: 1.5rem; }
+  .mode-landscape .sl-col { width: 50%; }
+  .mode-portrait .sl-col { width: 100%; }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full p-12 gap-8">
+
+    <!-- Header -->
+    <div class="flex items-center gap-3">
+      <span class="w-1 h-8 rounded-full" style="background: {{config.brandColor.primary}};"></span>
+      <h2 class="text-3xl font-bold" style="color: {{config.brandColor.foreground}}; font-family: '{{config.font.headingFont}}', sans-serif;">Problem &amp; Solution</h2>
+    </div>
+
+    <!-- Two-column split -->
+    <div class="sl-layout flex flex-1">
+
+      <!-- Problem -->
+      <div class="sl-col flex flex-col gap-4">
+        <div class="rounded-2xl p-6 flex flex-col gap-4 h-full" style="background: {{config.brandColor.muted}}; border: 1.5px solid {{config.brandColor.border}};">
+          <div class="flex items-center gap-2">
+            <span class="text-xl">⚠️</span>
+            <h3 class="text-lg font-bold" style="color: {{config.brandColor.foreground}}; font-family: '{{config.font.headingFont}}', sans-serif;">The Problem</h3>
+          </div>
+          <p class="text-sm leading-relaxed" style="color: {{config.brandColor.mutedForeground}}; font-family: '{{config.font.textFont}}', sans-serif;">
+            Career growth stalls when people lack timely, personalized guidance. Most professionals cannot afford a dedicated career coach, and generic reminder tools lack individual context.
+          </p>
+          <div class="flex flex-col gap-3 mt-2">
+            <div class="flex items-start gap-3 p-3 rounded-xl" style="background: {{config.brandColor.background}};">
+              <span style="color: {{config.brandColor.destructive}}; font-size: 1rem;">✕</span>
+              <div>
+                <p class="text-xs font-semibold" style="color: {{config.brandColor.foreground}}; font-family: '{{config.font.textFont}}', sans-serif;">Resumes go stale for months</p>
+                <p class="text-xs mt-0.5" style="color: {{config.brandColor.mutedForeground}}; font-family: '{{config.font.textFont}}', sans-serif;">No one reminds them until it's too late</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3 p-3 rounded-xl" style="background: {{config.brandColor.background}};">
+              <span style="color: {{config.brandColor.destructive}}; font-size: 1rem;">✕</span>
+              <div>
+                <p class="text-xs font-semibold" style="color: {{config.brandColor.foreground}}; font-family: '{{config.font.textFont}}', sans-serif;">Skill gaps go unnoticed</p>
+                <p class="text-xs mt-0.5" style="color: {{config.brandColor.mutedForeground}}; font-family: '{{config.font.textFont}}', sans-serif;">No context-aware learning recommendations</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3 p-3 rounded-xl" style="background: {{config.brandColor.background}};">
+              <span style="color: {{config.brandColor.destructive}}; font-size: 1rem;">✕</span>
+              <div>
+                <p class="text-xs font-semibold" style="color: {{config.brandColor.foreground}}; font-family: '{{config.font.textFont}}', sans-serif;">Application momentum fades</p>
+                <p class="text-xs mt-0.5" style="color: {{config.brandColor.mutedForeground}}; font-family: '{{config.font.textFont}}', sans-serif;">Without nudges, job seekers lose discipline</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Solution -->
+      <div class="sl-col flex flex-col gap-4">
+        <div class="rounded-2xl p-6 flex flex-col gap-4 h-full" style="background: {{config.brandColor.primary}};">
+          <div class="flex items-center gap-2">
+            <span class="text-xl">✦</span>
+            <h3 class="text-lg font-bold" style="color: {{config.brandColor.primaryForeground}}; font-family: '{{config.font.headingFont}}', sans-serif;">The Solution</h3>
+          </div>
+          <p class="text-sm leading-relaxed" style="color: rgba(255,255,255,0.85); font-family: '{{config.font.textFont}}', sans-serif;">
+            {{config.appName}} acts as an always-on career mentor — analyzing each user's unique profile, activity, and roadmap to deliver precisely the right guidance at exactly the right moment.
+          </p>
+          <div class="flex flex-col gap-3 mt-2">
+            <div class="flex items-start gap-3 p-3 rounded-xl" style="background: rgba(255,255,255,0.12);">
+              <span style="color: #86EFAC; font-size: 1rem;">✓</span>
+              <div>
+                <p class="text-xs font-semibold" style="color: #FFFFFF; font-family: '{{config.font.textFont}}', sans-serif;">AI monitors every user's career data continuously</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3 p-3 rounded-xl" style="background: rgba(255,255,255,0.12);">
+              <span style="color: #86EFAC; font-size: 1rem;">✓</span>
+              <div>
+                <p class="text-xs font-semibold" style="color: #FFFFFF; font-family: '{{config.font.textFont}}', sans-serif;">Personalized emails — never generic, never spammy</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3 p-3 rounded-xl" style="background: rgba(255,255,255,0.12);">
+              <span style="color: #86EFAC; font-size: 1rem;">✓</span>
+              <div>
+                <p class="text-xs font-semibold" style="color: #FFFFFF; font-family: '{{config.font.textFont}}', sans-serif;">Full user control over frequency, timing, and type</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
