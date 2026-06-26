@@ -1,0 +1,109 @@
+<style>
+  .mode-landscape .sl-body { flex-direction: row; gap: 2rem; }
+  .mode-portrait .sl-body { flex-direction: column; gap: 1.5rem; }
+  .mode-landscape .sl-left { width: 52%; }
+  .mode-landscape .sl-right { width: 48%; }
+  .mode-portrait .sl-left { width: 100%; }
+  .mode-portrait .sl-right { width: 100%; }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full p-12 gap-5">
+
+    <!-- Header -->
+    <div class="flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <span class="w-1 h-8 rounded-full" style="background: {{config.brandColor.accent}};"></span>
+        <h2 class="text-3xl font-bold" style="color: {{config.brandColor.foreground}}; font-family: '{{config.font.headingFont}}', sans-serif;">North Star Metric</h2>
+      </div>
+      <span class="px-3 py-1 rounded-full text-xs font-semibold" style="background: {{config.brandColor.muted}}; color: {{config.brandColor.mutedForeground}}; font-family: '{{config.font.textFont}}', sans-serif;">Projected impact — based on your inputs</span>
+    </div>
+
+    <!-- Body -->
+    <div class="sl-body flex flex-1">
+
+      <!-- Left: Verified Operations -->
+      <div class="sl-left flex flex-col gap-4">
+
+        <!-- Operation definition -->
+        <div class="rounded-2xl p-5 flex flex-col gap-3" style="background: {{config.brandColor.primary}};">
+          <p class="text-xs font-semibold uppercase tracking-widest" style="color: rgba(255,255,255,0.7); font-family: '{{config.font.textFont}}', sans-serif;">Weekly Verified Operation</p>
+          <p class="text-lg font-bold" style="color: #FFFFFF; font-family: '{{config.font.headingFont}}', sans-serif;">Personalized Career Coaching Email Delivered</p>
+          <p class="text-xs leading-relaxed" style="color: rgba(255,255,255,0.8); font-family: '{{config.font.textFont}}', sans-serif;">A verified operation is one AI-generated, user-specific career guidance email successfully delivered — triggered by real user data (profile, activity, roadmap, progress) and respecting the user's notification preferences.</p>
+        </div>
+
+        <!-- WVO projection formula -->
+        <div class="rounded-2xl p-5 flex flex-col gap-3" style="background: {{config.brandColor.card}}; border: 1.5px solid {{config.brandColor.border}};">
+          <p class="text-xs font-semibold uppercase tracking-widest" style="color: {{config.brandColor.primary}}; font-family: '{{config.font.textFont}}', sans-serif;">WVO Projection Formula</p>
+          <div class="flex flex-col gap-2">
+            <div class="flex items-center gap-2 p-2 rounded-lg" style="background: {{config.brandColor.muted}};">
+              <span class="text-xs font-mono font-semibold" style="color: {{config.brandColor.foreground}}; font-family: '{{config.font.textFont}}', sans-serif;">Active users</span>
+              <span class="text-xs" style="color: {{config.brandColor.mutedForeground}};">×</span>
+              <span class="text-xs font-mono font-semibold" style="color: {{config.brandColor.foreground}}; font-family: '{{config.font.textFont}}', sans-serif;">avg emails/user/week</span>
+              <span class="text-xs" style="color: {{config.brandColor.mutedForeground}};">=</span>
+              <span class="text-xs font-bold" style="color: {{config.brandColor.primary}}; font-family: '{{config.font.textFont}}', sans-serif;">WVO</span>
+            </div>
+            <div class="flex items-center gap-2 p-2 rounded-lg" style="background: {{config.brandColor.accent}}; opacity: 0.12; display: none;"></div>
+            <!-- Example with assumption chips -->
+            <div class="flex flex-col gap-1.5 mt-1">
+              <div class="flex items-center gap-2">
+                <span class="px-2 py-0.5 rounded text-xs font-medium" style="background: #FEF9C3; color: #854D0E; font-family: '{{config.font.textFont}}', sans-serif;">Assumption — adjust this</span>
+                <span class="text-xs" style="color: {{config.brandColor.mutedForeground}}; font-family: '{{config.font.textFont}}', sans-serif;">500 active users</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="px-2 py-0.5 rounded text-xs font-medium" style="background: #FEF9C3; color: #854D0E; font-family: '{{config.font.textFont}}', sans-serif;">Assumption — adjust this</span>
+                <span class="text-xs" style="color: {{config.brandColor.mutedForeground}}; font-family: '{{config.font.textFont}}', sans-serif;">3 relevant emails per user per week</span>
+              </div>
+              <div class="flex items-center gap-2 p-2 rounded-lg mt-1" style="background: {{config.brandColor.primary}};">
+                <span class="text-sm font-bold" style="color: #FFFFFF; font-family: '{{config.font.headingFont}}', sans-serif;">500 × 3 = 1,500 verified operations / week</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Value & ROI -->
+      <div class="sl-right flex flex-col gap-4">
+
+        <!-- Total value -->
+        <div class="rounded-2xl p-5 flex flex-col gap-3" style="background: {{config.brandColor.card}}; border: 1.5px solid {{config.brandColor.border}};">
+          <p class="text-xs font-semibold uppercase tracking-widest" style="color: {{config.brandColor.secondary}}; font-family: '{{config.font.textFont}}', sans-serif;">Value Per Operation</p>
+          <div class="flex flex-col gap-2">
+            <div class="flex items-center gap-2">
+              <span class="px-2 py-0.5 rounded text-xs font-medium" style="background: #FEF9C3; color: #854D0E; font-family: '{{config.font.textFont}}', sans-serif;">Assumption — adjust this</span>
+              <span class="text-xs" style="color: {{config.brandColor.mutedForeground}}; font-family: '{{config.font.textFont}}', sans-serif;">$2 value per personalized coaching email</span>
+            </div>
+            <p class="text-xs" style="color: {{config.brandColor.mutedForeground}}; font-family: '{{config.font.textFont}}', sans-serif;">Derived from: equivalent coaching touchpoint cost vs. human advisor at ~$200/hr session rate, amortized per interaction.</p>
+          </div>
+        </div>
+
+        <!-- Projected totals -->
+        <div class="rounded-2xl p-5 flex flex-col gap-4" style="background: {{config.brandColor.secondary}};">
+          <p class="text-xs font-semibold uppercase tracking-widest" style="color: rgba(255,255,255,0.7); font-family: '{{config.font.textFont}}', sans-serif;">Projected Total Value</p>
+          <div class="flex gap-6">
+            <div>
+              <p class="text-3xl font-bold" style="color: #FFFFFF; font-family: '{{config.font.headingFont}}', sans-serif;">$3,000</p>
+              <p class="text-xs mt-1" style="color: rgba(255,255,255,0.7); font-family: '{{config.font.textFont}}', sans-serif;">per week<br/>1,500 ops × $2</p>
+            </div>
+            <div class="border-l" style="border-color: rgba(255,255,255,0.2);"></div>
+            <div>
+              <p class="text-3xl font-bold" style="color: #FFFFFF; font-family: '{{config.font.headingFont}}', sans-serif;">$156K</p>
+              <p class="text-xs mt-1" style="color: rgba(255,255,255,0.7); font-family: '{{config.font.textFont}}', sans-serif;">per year<br/>$3,000 × 52</p>
+            </div>
+          </div>
+          <p class="text-xs" style="color: rgba(255,255,255,0.6); font-family: '{{config.font.textFont}}', sans-serif;">All figures are projections from your inputs above. Adjust assumption chips to match your actual user base.</p>
+        </div>
+
+        <!-- What to watch -->
+        <div class="rounded-2xl p-4 flex items-center gap-3" style="background: {{config.brandColor.muted}};">
+          <span class="text-xl">⭐</span>
+          <div>
+            <p class="text-xs font-bold" style="color: {{config.brandColor.foreground}}; font-family: '{{config.font.headingFont}}', sans-serif;">The number to watch every week</p>
+            <p class="text-xs" style="color: {{config.brandColor.mutedForeground}}; font-family: '{{config.font.textFont}}', sans-serif;">Total personalized coaching emails delivered — not opens, not signups. Emails that reached real users based on their actual career data.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
